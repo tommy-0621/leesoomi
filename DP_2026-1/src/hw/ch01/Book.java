@@ -1,4 +1,4 @@
-package pratice.ch01;
+package ch01.Sample;
 
 public class Book {
     private String name;
