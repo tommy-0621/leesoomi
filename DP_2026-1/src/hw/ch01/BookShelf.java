@@ -1,4 +1,4 @@
-package ch01.Sample;
+package hw.ch01;
 
 import java.util.Iterator;
 
@@ -23,8 +23,17 @@ public class BookShelf implements Iterable<Book> {
         return last;
     }
 
+    public Iterator<Book> iteratorByGenre(String genre) {
+        return new BookShelfGenreIterator(this, genre);
+    }
+
+    public Iterator<Book> iteratorByYear() {
+        return new BookShelfYearIterator(this);
+    }
+
     @Override
     public Iterator<Book> iterator() {
         return new BookShelfIterator(this);
     }
+    
 }
