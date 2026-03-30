@@ -1,15 +1,15 @@
-package ch03.Sample;
+package pratice.ch03;
 
 public abstract class AbstractDisplay {
     // open, print, close는 하위 클래스에 구현을 맡기는 추상 메소드 
-    public abstract void open();
+    abstract protected void open();
     public abstract void print();
     public abstract void close();
 
     // display는 AbstractDisplay에서 구현하는 메소드 
     //큰 틀(흐름, 구조)을 제공함 => 템플릿 메소드
     public final void display() {
-        open();
+        open();  //fianl() => 하위 클래스에서 큰 흐름은 자식들이 바꿀 수 없도록 함
         for (int i = 0; i < 5; i++) {
             print();
         }
