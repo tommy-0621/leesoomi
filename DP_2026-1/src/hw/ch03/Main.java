@@ -9,13 +9,13 @@ public class Main {
         d1.display();
         d2.display();
 
-        // [3-2] Step 1 테스트
+        // [3-2] Step 1 
         AbstractDisplay d3 = new CharDisplay('X', 3);
         AbstractDisplay d4 = new StringDisplay("Test", 7);
         d3.display();
         d4.display();
 
-        // [3-3] Step 2 테스트
+        // [3-3] Step 2
         AbstractDisplay num = new NumberDisplay(20, 4);
         num.display();
     }

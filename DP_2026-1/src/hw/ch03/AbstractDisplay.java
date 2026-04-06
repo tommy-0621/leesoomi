@@ -1,7 +1,7 @@
 package hw.ch03;
 
 public abstract class AbstractDisplay {
-    int repeat = 5; // 기본값 5
+    int repeat = 5; 
 
     public AbstractDisplay() {}
 

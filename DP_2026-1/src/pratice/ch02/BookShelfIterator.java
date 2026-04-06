@@ -1,4 +1,4 @@
-package pratice.ch01;
+package pratice.ch02;
 
 import java.util.Iterator; //jdk에서 제공하는 Iterator 인터페이스를 사용하기 위해 import
 import java.util.NoSuchElementException;
