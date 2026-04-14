@@ -1,12 +1,13 @@
 package ch10.Sample;
 
 public class Main {
-    public static void main(String[] args) {
-        if (args.length != 2) {
+    public static void main(String[] args) { 
+        if (args.length != 2) { //명령행 인자의 갯수가 2개가 아니면 사용법을 표시하고 종료
             System.out.println("Usage: java Main randomseed1 randomseed2");
             System.out.println("Example: java Main 314 15");
             System.exit(0);
         }
+        //명령행 인자는 문자열이므로 숫자로 반환해야 함
         int seed1 = Integer.parseInt(args[0]);
         int seed2 = Integer.parseInt(args[1]);
         Player player1 = new Player("KIM", new WinningStrategy(seed1));
