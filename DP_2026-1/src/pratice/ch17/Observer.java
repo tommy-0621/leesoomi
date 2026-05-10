@@ -1,0 +1,5 @@
+package pratice.ch17;
+
+public interface Observer {
+    public abstract void update(NumberGenerator generator); //통지받을 때 호출되는 메소드
+}
